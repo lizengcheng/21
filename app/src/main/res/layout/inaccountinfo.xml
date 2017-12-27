@@ -5,7 +5,8 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="5dp"
     android:orientation="vertical"
-    android:weightSum="1" >
+    android:weightSum="1"
+    android:background="@drawable/bg">
 
     <LinearLayout
         android:id="@+id/linearLayout1"
