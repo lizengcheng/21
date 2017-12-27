@@ -21,7 +21,7 @@ import com.example.u.a21.R;
 
 public class MainActivity extends Activity {
     private GridView gvInfo;
-    private String[] titles = new String[] { "", "", "", "", "", "", "", "" };
+    private String[] titles = new String[] { "新增支出", "新增收入", "我的支出", "我的收入", "数据管理", "系统设置", "收支便签", "退出" };
     private int[] images = new int[] { R.drawable.addoutaccount, R.drawable.addinaccount, R.drawable.outaccountinfo, R.drawable.inaccountinfo,
             R.drawable.showinfo, R.drawable.sysset, R.drawable.accountflag, R.drawable.exit };
 

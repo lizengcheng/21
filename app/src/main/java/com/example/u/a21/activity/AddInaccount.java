@@ -57,9 +57,9 @@ btnInSaveButton.setOnClickListener(new OnClickListener() {
             Tb_inaccount tb_inaccount = new Tb_inaccount(inaccountDAO.getMaxId() + 1, Double.parseDouble(strInMoney), txtInTime.getText()
                     .toString(), spInType.getSelectedItem().toString(), txtInHandler.getText().toString(), txtInMark.getText().toString());
             inaccountDAO.add(tb_inaccount);
-            Toast.makeText(AddInaccount.this, "", Toast.LENGTH_SHORT).show();
+            Toast.makeText(AddInaccount.this, "【新增收入】数据添加成功！", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(AddInaccount.this, "", Toast.LENGTH_SHORT).show();
+            Toast.makeText(AddInaccount.this, "请输收入金额！", Toast.LENGTH_SHORT).show();
         }
     }
 });

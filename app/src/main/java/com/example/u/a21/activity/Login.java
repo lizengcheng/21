@@ -36,7 +36,7 @@ public class Login extends Activity {
                     if (pwdDAO.find().getPassword().equals(txtlogin.getText().toString())) {
                         startActivity(intent);
                     } else {
-                        Toast.makeText(Login.this, "", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Login.this, "请输入正确的密码！", Toast.LENGTH_SHORT).show();
                     }
                 }
                 txtlogin.setText("");

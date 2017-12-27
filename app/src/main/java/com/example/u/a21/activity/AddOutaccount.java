@@ -58,9 +58,9 @@ public class AddOutaccount extends Activity {
                             Tb_outaccount tb_outaccount = new Tb_outaccount(outaccountDAO.getMaxId() + 1, Double.parseDouble(strMoney), txtTime.getText()
                                     .toString(), spType.getSelectedItem().toString(), txtAddress.getText().toString(), txtMark.getText().toString());
                             outaccountDAO.add(tb_outaccount);
-                            Toast.makeText(AddOutaccount.this, "", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(AddOutaccount.this, "【新增支出】数据添加成功！", Toast.LENGTH_SHORT).show();
                         } else {
-                            Toast.makeText(AddOutaccount.this, "", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(AddOutaccount.this, "请输入金额！", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
