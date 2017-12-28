@@ -31,7 +31,6 @@ showInfo(R.id.btnininfo);
 
         lvinfo.setOnItemClickListener(new OnItemClickListener() {
 
-            // ��дonItemClick����
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String strInfo = String.valueOf(((TextView) view).getText());
@@ -52,7 +51,7 @@ private void showInfo(int intType) {
     strInfos = new String[listinfos.size()];
     int m = 0;
     for (Tb_inaccount tb_inaccount : listinfos) {
-        strInfos[m] = tb_inaccount.getid() + "|" + tb_inaccount.getType() + " " + String.valueOf(tb_inaccount.getMoney()) + "Ԫ     "
+        strInfos[m] = tb_inaccount.getid() + "|" + tb_inaccount.getType() + " " + String.valueOf(tb_inaccount.getMoney()) + "元    "
                 + tb_inaccount.getTime();
         m++;
     }

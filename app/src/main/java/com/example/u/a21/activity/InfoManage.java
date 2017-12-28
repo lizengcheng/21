@@ -59,8 +59,8 @@ private InaccountDAO inaccountDAO = new InaccountDAO(InfoManage.this);
         strType = strInfos[1];
         if (strType.equals("btnoutinfo")) {
 
-            tvtitle.setText("");
-            textView.setText("");
+            tvtitle.setText("支出管理：");
+            textView.setText("地    点：");
             Tb_outaccount tb_outaccount = outaccountDAO.find(Integer.parseInt(strid));
             txtMoney.setText(String.valueOf(tb_outaccount.getMoney()));
             txtTime.setText(tb_outaccount.getTime());
@@ -69,8 +69,8 @@ private InaccountDAO inaccountDAO = new InaccountDAO(InfoManage.this);
             txtMark.setText(tb_outaccount.getMark());
         } else if (strType.equals("btnininfo")) {
 
-            tvtitle.setText("");
-            textView.setText("");
+            tvtitle.setText("收入管理：");
+            textView.setText("付款方：");
             Tb_inaccount tb_inaccount = inaccountDAO.find(Integer.parseInt(strid));
             txtMoney.setText(String.valueOf(tb_inaccount.getMoney()));
             txtTime.setText(tb_inaccount.getTime());
@@ -110,8 +110,7 @@ private InaccountDAO inaccountDAO = new InaccountDAO(InfoManage.this);
                     tb_inaccount.setMark(txtMark.getText().toString());
                     inaccountDAO.update(tb_inaccount);
                 }
-                // ������Ϣ��ʾ
-                Toast.makeText(InfoManage.this, "", Toast.LENGTH_SHORT).show();
+                Toast.makeText(InfoManage.this, "【数据】修改成功！", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -125,7 +124,7 @@ private InaccountDAO inaccountDAO = new InaccountDAO(InfoManage.this);
 
                     inaccountDAO.detele(Integer.parseInt(strid));
                 }
-                Toast.makeText(InfoManage.this, "", Toast.LENGTH_SHORT).show();
+                Toast.makeText(InfoManage.this, "【数据】删除成功！", Toast.LENGTH_SHORT).show();
             }
         });
 

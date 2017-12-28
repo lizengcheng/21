@@ -14,6 +14,7 @@
         android:textSize="25dp"
         android:gravity="center_horizontal"/>
     <EditText
+        android:hint="请输入密码"
         android:id="@+id/txtLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -39,7 +39,7 @@ private String strid;
                 tb_flag.setid(Integer.parseInt(strid));
                 tb_flag.setFlag(txtFlag.getText().toString());
                 flagDAO.update(tb_flag);
-                Toast.makeText(FlagManage.this, "", Toast.LENGTH_SHORT).show();
+                Toast.makeText(FlagManage.this, "【便签数据】修改成功！", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -47,7 +47,7 @@ private String strid;
             @Override
             public void onClick(View arg0) {
                 flagDAO.detele(Integer.parseInt(strid));
-                Toast.makeText(FlagManage.this, "", Toast.LENGTH_SHORT).show();
+                Toast.makeText(FlagManage.this, "【便签数据】删除成功！", Toast.LENGTH_SHORT).show();
             }
         });
     }

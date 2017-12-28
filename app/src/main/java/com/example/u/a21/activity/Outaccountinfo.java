@@ -50,7 +50,7 @@ public class Outaccountinfo extends Activity {
         strInfos = new String[listoutinfos.size()];
         int i = 0;
         for (Tb_outaccount tb_outaccount : listoutinfos) {
-            strInfos[i] = tb_outaccount.getid() + "|" + tb_outaccount.getType() + " " + String.valueOf(tb_outaccount.getMoney()) + "Ԫ     "
+            strInfos[i] = tb_outaccount.getid() + "|" + tb_outaccount.getType() + " " + String.valueOf(tb_outaccount.getMoney()) + "元   "
                     + tb_outaccount.getTime();
             i++;
         }
@@ -60,7 +60,6 @@ public class Outaccountinfo extends Activity {
 
     @Override
     protected void onRestart() {
-        // TODO Auto-generated method stub
         super.onRestart();
         ShowInfo(R.id.btnoutinfo);
     }
